@@ -57,12 +57,18 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 // typed js
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'C++ Programmer', 'Python Enthusiast'],
+    strings: [
+        'Full Stack Web Developer',
+        'React & Node.js Enthusiast',
+        'C++ & Python Programmer',
+        'Problem Solver (DSA)',
+    ],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
-    });
+});
+
 
 
     // Animate skill bars on scroll
