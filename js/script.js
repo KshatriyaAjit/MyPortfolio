@@ -63,3 +63,28 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
     });
+
+
+    // Animate skill bars on scroll
+const skillBars = document.querySelectorAll(".progress .bar span");
+
+const animateSkills = () => {
+  skillBars.forEach(bar => {
+    const targetWidth = bar.getAttribute("data-width");
+    bar.style.width = targetWidth;
+  });
+};
+
+// Trigger when skills section is visible
+const skillsSection = document.querySelector("#skills");
+let skillsAnimated = false;
+
+window.addEventListener("scroll", () => {
+  const sectionPos = skillsSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 1.2;
+
+  if (sectionPos < screenPos && !skillsAnimated) {
+    animateSkills();
+    skillsAnimated = true;
+  }
+});
