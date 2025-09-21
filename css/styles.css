@@ -20,6 +20,17 @@
      color: #ffffff;            /* Light text for contrast */
      line-height: 1.6;
   }
+
+  html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
   
   /* Header */
   .header {
@@ -64,43 +75,43 @@
   }
   
   /* Home Section */
-  .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 6rem 7% 3rem;
-    min-height: 100vh;
-    background: var(--section-bg);
-    background-color: var(--bg-color);
-    color: inherit;
-  }
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 6rem 5% 3rem;  /* reduced from 7% → avoids overflow */
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: inherit;
+  overflow-x: hidden; /* double safety */
+}
   
-  .home-content {
-    flex: 1 1 500px;
-    padding-right: 2rem;
-  }
+.home-content {
+  flex: 1 1 500px;
+  padding-right: 2rem;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  color: var(--main-color);
+}
   
-  .home-content h1 {
-    font-size: 3rem;
-    color: var(--main-color);
-  }
-  
-  .home-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .home-content p {
-    max-width: 600px;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-  }
-  
-  .multiple-text {
-    color: var(--main-color);
-    font-weight: bold;
-  }
+.home-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.multiple-text {
+  color: var(--main-color);
+  font-weight: bold;
+}
   
   .social-media a {
     font-size: 1.5rem;
@@ -130,50 +141,49 @@
     box-shadow: none;
   }
   
-  .home-img {
-    flex: 1 1 300px;
-    text-align: center;
-  }
-  
-  .profile-img {
-    max-width: 350px;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
+.home-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.profile-img {
+  max-width: 100%;      /* ensures it never exceeds screen width */
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover;    /* keeps image contained */
+}
   /* About */
-  .about {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 4rem 7%;
-    background: var(--bg-color);
-    background-color: var(--bg-color);
-    color: inherit;
-  }
-  
-  .about-img {
-    flex: 1 1 300px;
-    text-align: center;
-  }
-  
-  .aboutt-img  {
-        width: 350px !important;
-        height: 350px !important;
-        object-fit: cover;
-        border-radius: 50%;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      }
-      
-    
-  
-  
-  .about-content {
-    flex: 1 1 500px;
-    padding: 1rem;
-  }
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 5%;   /* was 7% → reduced */
+  background: var(--bg-color);
+  color: inherit;
+}
+
+.about-img {
+  flex: 1 1 300px;
+  text-align: center;
+  margin-bottom: 1.5rem; /* space below img on mobile */
+}
+
+.aboutt-img {
+  max-width: 100%;
+  width: 300px;       
+  height: 300px;       
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-content {
+  flex: 1 1 400px;
+  padding: 1rem;
+}
+
 
 
 
@@ -182,7 +192,7 @@
 /* Skills */
 /* Skills Section */
 .skills {
-  padding: 4rem 7%;
+  padding: 4rem 5%;   /* was 7% */
   background: var(--bg-color);
   color: var(--text-color);
   text-align: center;
@@ -190,8 +200,8 @@
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* slightly smaller min-width */
+  gap: 1.5rem;   /* less gap → avoids edge sticking */
   margin-top: 2rem;
 }
 
@@ -426,22 +436,25 @@
     }
   
     .home {
-        flex-direction: column-reverse;
-        text-align: center;
-      }
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 7rem 1rem 2rem; /* less padding for small screens */
+  }
+
+  .home-content {
+    padding: 0;
+  }
     
-      .home-content {
-        padding: 0;
-      }
-    
-      .home-content,
-      .home-img {
-        flex: 1 1 100%;
-      }
-    
-      .profile-img {
-        margin-bottom: 2rem;
-      }
+    .home-content,
+  .home-img {
+    flex: 1 1 100%;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 2rem;
+  }
   
     .about {
       flex-direction: column;
@@ -452,6 +465,13 @@
     {
       flex: 1 1 100%;
     }
+
+    .aboutt-img {
+  width: 250px;
+  height: 250px;
+}
+
+
 
   
   
