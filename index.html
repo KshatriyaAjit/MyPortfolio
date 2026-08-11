@@ -1,397 +1,1895 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&family=Questrial&display=swap"
-      rel="stylesheet"
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Ajit Singh | Full Stack Developer</title>
+
+
+  <!-- Main CSS -->
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  />
+
+
+  <!-- Google Fonts -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300;400;500;600;700&family=Questrial&display=swap"
+    rel="stylesheet"
+  />
+
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+
+  <!-- Boxicons -->
+
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       SCROLL PROGRESS
+  ====================================================== -->
+
+  <div class="scroll-progress"></div>
+
+
+  <!-- =====================================================
+       HEADER / NAVBAR
+  ====================================================== -->
+
+  <header class="header">
+
+
+    <!-- Logo -->
+
+    <a
+      href="#home"
+      class="logo"
+    >
+      Ajit<span>.</span>
+    </a>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+      <a
+        href="#home"
+        class="active"
+      >
+        Home
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#education">
+          Education
+     </a>
+
+      <a href="#skills">
+        Skills
+      </a>
+
+      <a href="#services">
+        Services
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <!-- Mobile Menu -->
+
+    <i
+      class="bx bx-menu"
+      id="menu-icon"
+    ></i>
+
+  </header>
+
+
+  <!-- =====================================================
+       HOME / HERO
+  ====================================================== -->
+
+  <section
+    class="home"
+    id="home"
+  >
+
+
+    <!-- Background Glows -->
+
+    <div
+      class="hero-glow hero-glow-one"
+    ></div>
+
+    <div
+      class="hero-glow hero-glow-two"
+    ></div>
+
+
+    <!-- Hero Content -->
+
+    <div class="home-content">
+
+
+      <!-- Availability -->
+
+      <div class="availability-badge">
+
+        <span class="status-dot"></span>
+
+        Available for Opportunities
+
+      </div>
+
+
+      <!-- Greeting -->
+
+      <h3 class="hero-greeting">
+
+        Hi, I'm
+
+      </h3>
+
+
+      <!-- Name -->
+
+      <h1 class="hero-name">
+
+        Ajit <span>Singh</span>
+
+      </h1>
+
+
+      <!-- Animated Role -->
+
+      <h3 class="hero-role">
+
+        I'm a
+
+        <span class="multiple-text"></span>
+
+      </h3>
+
+
+      <!-- Description -->
+
+      <p class="hero-description">
+
+        I build scalable, responsive and
+        user-friendly web applications using
+        modern technologies like
+
+        <strong>
+          React, Node.js, MongoDB and Express.js.
+        </strong>
+
+        I enjoy solving complex problems and
+        turning ideas into real-world digital
+        experiences.
+
+      </p>
+
+
+      <!-- CTA Buttons -->
+
+      <div class="hero-buttons">
+
+
+        <a
+          href="#projects"
+          class="btn primary-btn"
+        >
+
+          View My Projects
+
+          <i class="bx bx-right-arrow-alt"></i>
+
+        </a>
+
+
+        <a
+          href="assets/updated resume.pdf"
+          target="_blank"
+          class="btn secondary-btn"
+        >
+
+          Download CV
+
+          <i class="bx bx-download"></i>
+
+        </a>
+
+
+      </div>
+
+
+      <!-- Social Links -->
+
+      <div
+        class="social-media hero-socials"
+      >
+
+
+        <a
+          href="https://x.com/KshatriyaAjits1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X"
+        >
+
+          <i class="bx bxl-twitter"></i>
+
+        </a>
+
+
+        <a
+          href="https://www.instagram.com/kshatriya_ajit_singh/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+
+          <i class="bx bxl-instagram"></i>
+
+        </a>
+
+
+        <a
+          href="https://github.com/KshatriyaAjit"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+
+          <i class="bx bxl-github"></i>
+
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/in/ajit-singh-181b8b261/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+
+          <i class="bx bxl-linkedin"></i>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- ===================================================
+         PROFILE IMAGE
+    ==================================================== -->
+
+    <div class="home-img">
+
+
+      <!-- Animated Ring -->
+
+      <div class="profile-ring"></div>
+
+
+      <!-- Glow -->
+
+      <div class="profile-glow"></div>
+
+
+      <!-- Profile -->
+
+      <img
+        src="images/profile2.jpeg"
+        alt="Ajit Singh"
+        class="profile-img"
+      />
+
+
+      <!-- React -->
+
+      <div
+        class="floating-tech tech-react"
+      >
+
+        <i class="bx bxl-react"></i>
+
+      </div>
+
+
+      <!-- Node -->
+
+      <div
+        class="floating-tech tech-node"
+      >
+
+        <i class="bx bxl-nodejs"></i>
+
+      </div>
+
+
+      <!-- Code -->
+
+      <div
+        class="floating-tech tech-code"
+      >
+
+        <i class="bx bx-code-alt"></i>
+
+      </div>
+
+      <!-- MongoDB -->
+
+<div class="floating-tech tech-mongo">
+  <i class="bx bxl-mongodb"></i>
+</div>
+
+
+<!-- JavaScript -->
+
+<div class="floating-tech tech-js">
+  <i class="bx bxl-javascript"></i>
+</div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       ABOUT
+  ====================================================== -->
+
+ <!-- =========================
+     ABOUT SECTION
+========================= -->
+
+<section class="about" id="about">
+
+  <!-- About Image -->
+  <div class="about-img">
+
+    <div class="about-image-glow"></div>
+
+    <div class="about-image-ring"></div>
+
+    <img
+      src="images/Profile1.jpeg"
+      alt="About Ajit Singh"
+      class="aboutt-img"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-
-    <!-- boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-
-      <i class="bx bx-menu" id="menu-icon"></i>
-
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <!-- Home Section -->
-
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Ajit Singh</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
-    
-    <p>
-  Welcome to my portfolio!  
-  I’m a passionate <b>Full Stack Web Developer</b> skilled in <b>React, Node.js, Python, C++, Tailwind CSS, and MongoDB</b>.  
-  I love building <b>responsive, scalable, and user-friendly applications</b> while keeping performance and clean architecture in mind.  
-  With a strong foundation in <b>Data Structures & Algorithms</b>, I enjoy solving complex problems and turning ideas into real-world solutions.  
-  From crafting interactive UIs to developing secure backend systems, I bring dedication and creativity to every project.  
-  Always eager to collaborate and explore new challenges — let’s build something amazing together!
-</p>
-
-    
-        <div class="social-media">
-          <a href="https://x.com/KshatriyaAjits1" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.instagram.com/kshatriya_ajit_singh/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/KshatriyaAjit" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/ajit-singh-181b8b261/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
-        </div>
-    
-        <a href="assets/updated resume.pdf" target="_blank" class="btn">Download CV</a>
-      </div>
-    
-      <div class="home-img">
-        <img src="images/Profile1.jpeg" alt="Profile Photo" class="profile-img" />
-      </div>
-    </section>
-    
-
-    <!-- about -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/about2.jpg" alt="About Photo" class = "aboutt-img" />
-      </div>
-
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend Developer!</h3>
-   <p>
-  I’m a dedicated <b>Full Stack Web Developer</b> with strong skills in <b>React, Node.js, Python, C++, and Tailwind CSS</b>.  
-  I specialize in building <b>responsive, scalable, and user-friendly applications</b> using modern frameworks and clean architecture principles.  
-  With a solid foundation in <b>Data Structures & Algorithms</b>, I enjoy solving complex problems and delivering efficient solutions.  
-  I’m passionate about <b>learning new technologies, collaborating on innovative projects, and continuously improving my craft</b>.  
-  Whether it’s frontend design, backend development, or problem-solving, I bring creativity and precision to every project.
-</p>
-
-       
-      </div>
-    </section>
-
-
-    <!-- Skills Section -->
-<!-- Skills Section -->
-<!-- Skills Section -->
-<section class="skills" id="skills">
-  <h2 class="heading">My <span>Skills</span></h2>
-
-  <div class="skills-container">
-
-    <!-- Languages -->
-    <div class="skill-box">
-      <h3>Languages</h3>
-      <div class="progress">
-        <span>C++</span>
-        <div class="bar"><span data-width="90%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Python</span>
-        <div class="bar"><span data-width="85%"></span></div>
-      </div>
-      <div class="progress">
-        <span>JavaScript (ES6+)</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-      <div class="progress">
-        <span>HTML</span>
-        <div class="bar"><span data-width="95%"></span></div>
-      </div>
-      <div class="progress">
-        <span>CSS</span>
-        <div class="bar"><span data-width="90%"></span></div>
-      </div>
-    </div>
-
-    <!-- Frontend -->
-    <div class="skill-box">
-      <h3>Libraries & Frameworks</h3>
-      <div class="progress">
-        <span>ReactJS</span>
-        <div class="bar"><span data-width="85%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Next.js</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Angular</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Material UI</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Tailwind / Bootstrap</span>
-        <div class="bar"><span data-width="85%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Shadcn UI</span>
-        <div class="bar"><span data-width="70%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Three.js</span>
-        <div class="bar"><span data-width="65%"></span></div>
-      </div>
-    </div>
-
-    <!-- Backend -->
-    <div class="skill-box">
-      <h3>Backend & APIs</h3>
-      <div class="progress">
-        <span>Node.js / Express</span>
-        <div class="bar"><span data-width="75%"></span></div>
-      </div>
-      <div class="progress">
-        <span>RESTful APIs</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-      <div class="progress">
-        <span>JWT Authentication</span>
-        <div class="bar"><span data-width="75%"></span></div>
-      </div>
-      <div class="progress">
-        <span>API Integration</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-    </div>
-
-    <!-- Databases -->
-    <div class="skill-box">
-      <h3>Databases</h3>
-      <div class="progress">
-        <span>SQL</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-      <div class="progress">
-        <span>MongoDB</span>
-        <div class="bar"><span data-width="75%"></span></div>
-      </div>
-    </div>
-
-    <!-- Developer Tools -->
-    <div class="skill-box">
-      <h3>Developer Tools</h3>
-      <div class="progress">
-        <span>Git / GitHub</span>
-        <div class="bar"><span data-width="90%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Docker</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Cloudinary</span>
-        <div class="bar"><span data-width="75%"></span></div>
-      </div>
-      <div class="progress">
-        <span>VS Code</span>
-        <div class="bar"><span data-width="95%"></span></div>
-      </div>
-      <div class="progress">
-        <span>PyCharm / IntelliJ</span>
-        <div class="bar"><span data-width="85%"></span></div>
-      </div>
-    </div>
-
-    <!-- Core Competencies -->
-    <div class="skill-box">
-      <h3>Core Competencies</h3>
-      <div class="progress">
-        <span>Data Structures & Algorithms</span>
-        <div class="bar"><span data-width="85%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Full Stack Web Development</span>
-        <div class="bar"><span data-width="90%"></span></div>
-      </div>
-      <div class="progress">
-        <span>MVC Architecture</span>
-        <div class="bar"><span data-width="80%"></span></div>
-      </div>
-      <div class="progress">
-        <span>Performance Optimization</span>
-        <div class="bar"><span data-width="75%"></span></div>
-      </div>
+    <div class="about-image-badge">
+      <i class="bx bx-code-alt"></i>
+      <span>Full Stack Developer</span>
     </div>
 
   </div>
+
+
+  <!-- About Content -->
+  <div class="about-content">
+
+    <span class="about-subtitle">
+      GET TO KNOW ME
+    </span>
+
+    <h2 class="heading">
+      About <span>Me</span>
+    </h2>
+
+    <h3>
+      Full Stack Web Developer
+    </h3>
+
+    <p>
+      I’m a dedicated <strong>Full Stack Web Developer</strong> with
+      strong skills in <strong>React, Node.js, Express.js, C++, and
+      Tailwind CSS</strong>.
+    </p>
+
+    <p>
+      I specialize in building <strong>responsive, scalable, and
+      user-friendly applications</strong> using modern frameworks
+      and clean architecture principles.
+    </p>
+
+   <p>
+  With a solid foundation in
+  <strong>Data Structures & Algorithms</strong>, I have solved
+  <strong>450+ problems on LeetCode</strong> and enjoy tackling
+  complex problems, improving algorithmic thinking, and building
+  efficient real-world solutions.
+</p>
+
+
+    <!-- About Highlights -->
+
+    <div class="about-highlights">
+
+      <div class="about-highlight">
+        <div class="highlight-icon">
+          <i class="bx bx-code-curly"></i>
+        </div>
+
+        <div>
+          <h4>Full Stack</h4>
+          <p>Frontend & Backend</p>
+        </div>
+      </div>
+
+
+      <div class="about-highlight">
+        <div class="highlight-icon">
+          <i class="bx bx-brain"></i>
+        </div>
+
+        <div>
+          <h4>Problem Solver</h4>
+          <p>DSA & Logical Thinking</p>
+        </div>
+      </div>
+
+
+      <div class="about-highlight">
+        <div class="highlight-icon">
+          <i class="bx bx-devices"></i>
+        </div>
+
+        <div>
+          <h4>Responsive UI</h4>
+          <p>Modern User Experience</p>
+        </div>
+      </div>
+
+
+      <div class="about-highlight">
+        <div class="highlight-icon">
+          <i class="bx bx-rocket"></i>
+        </div>
+
+        <div>
+          <h4>Continuous Learning</h4>
+          <p>Always Improving</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     EDUCATION & ACHIEVEMENTS
+====================================================== -->
+
+<section class="education-achievements" id="education">
+
+  <div class="education-header">
+
+    <span class="section-eyebrow">
+      EDUCATION & ACHIEVEMENTS
+    </span>
+
+    <h2 class="heading">
+      My <span>Journey</span>
+    </h2>
+
+    <p class="education-subtitle">
+      My academic background and continuous progress in
+      problem solving and software development.
+    </p>
+
+  </div>
+
+
+  <div class="education-container">
+
+    <!-- Education -->
+
+    <article class="education-card">
+
+      <div class="education-icon">
+        <i class="bx bxs-graduation"></i>
+      </div>
+
+      <div class="education-content">
+
+        <span class="education-label">
+          EDUCATION
+        </span>
+
+        <h3>
+          B.Tech in Information Technology
+        </h3>
+
+        <p class="education-institute">
+          Bundelkhand Institute of Engineering & Technology,
+          Jhansi
+        </p>
+
+        <div class="education-meta">
+
+          <span>
+            <i class="bx bx-calendar"></i>
+            2022 – 2026
+          </span>
+
+          <span>
+            <i class="bx bx-award"></i>
+            CGPA 8.1 / 10
+          </span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- LeetCode -->
+
+    <article class="achievement-card">
+
+      <div class="achievement-icon">
+        <i class="bx bx-code-alt"></i>
+      </div>
+
+      <div class="achievement-content">
+
+        <span class="achievement-label">
+          PROBLEM SOLVING
+        </span>
+
+        <h3>
+          450+ LeetCode Problems
+        </h3>
+
+        <p>
+          Consistent practice of Data Structures &
+          Algorithms with a focus on improving
+          problem-solving and algorithmic thinking.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- CodeChef -->
+
+    <article class="achievement-card">
+
+      <div class="achievement-icon">
+        <i class="bx bx-trophy"></i>
+      </div>
+
+      <div class="achievement-content">
+
+        <span class="achievement-label">
+          COMPETITIVE PROGRAMMING
+        </span>
+
+        <h3>
+          2★ CodeChef
+        </h3>
+
+        <p>
+          Built competitive programming experience through
+          regular participation and algorithmic problem solving.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- GeeksforGeeks -->
+
+    <article class="achievement-card">
+
+      <div class="achievement-icon">
+        <i class="bx bx-brain"></i>
+      </div>
+
+      <div class="achievement-content">
+
+        <span class="achievement-label">
+          DSA PRACTICE
+        </span>
+
+        <h3>
+          70+ GeeksforGeeks Problems
+        </h3>
+
+        <p>
+          Practiced data structures and algorithms across
+          different problem-solving patterns and concepts.
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
 </section>
 
 
 
 
+  <!-- =====================================================
+       SKILLS
+  ====================================================== -->
 
-    <!-- services -->
+<!-- =========================
+     SKILLS SECTION
+========================= -->
 
-    <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
-      <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development </h3>
-          <p>
-            Skilled in front-end web development with HTML, CSS, JavaScript, and React.
-            Experienced in building responsive, user-friendly websites.
-          </p>
-         
+<section class="skills" id="skills">
+
+  <h2 class="heading">
+    My <span>Skills</span>
+  </h2>
+
+  <div class="skills-container">
+
+    <!-- =========================
+         LANGUAGES
+    ========================== -->
+
+    <div class="skill-box">
+
+      <h3>Languages</h3>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>C++</span>
+          <span>Advanced</span>
         </div>
 
-        <div class="services-box">
-          <img src="images/cplusplus.svg" alt="C++ Icon" class="custom-icon">
- 
-          <h3>C++</h3>
-          <p>
-            Proficient in C++ with a focus on object-oriented programming and algorithms.
-            Experienced in data structures and optimization techniques.
-         
-          </p>
-         
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-python"></i>
-          <h3>Python</h3>
-          <p>
-            Skilled in Python for data analysis, automation, and web development.
-            Experienced with libraries like NumPy, Pandas, and Flask.
-          </p>
-         
+        <div class="bar">
+          <span data-width="90%"></span>
         </div>
       </div>
-    </section>
 
-    <!-- Project Section -->
-
-    <section class="projects" id="projects">
-      <h2 class="heading">Latest <span>Project</span></h2>
-
-      <div class="project-container">
-
-
-          <div class="project-box">
-          <img src="images/favicon2.svg" alt="Project Image" />
-          <div class="project-layer">
-            <h4>ExceliQ</h4>
-            <p>
-              An Excel Analyzer App using React and Node.js/Express, MongoDB, and Cloudinary.
-            </p>
-            <a href="https://exceliq.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
-          </div>
+      <div class="progress">
+        <div class="skill-info">
+          <span>Python</span>
+          <span>Intermediate</span>
         </div>
 
-        <div class="project-box">
-  <img src="images/Blog.jpg" alt="Project Image" />
-  <div class="project-layer">
-    <h4>MERN Blog</h4>
-    <p>
-      A full-stack blogging platform built with React, Node.js/Express, MongoDB, and Cloudinary, featuring JWT authentication, role-based access, and an admin panel.
-    </p>
-    <a href="https://mybyteblog.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
+        <div class="bar">
+          <span data-width="80%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>JavaScript (ES6+)</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="90%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>HTML</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="95%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>CSS</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="90%"></span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         LIBRARIES & FRAMEWORKS
+    ========================== -->
+
+    <div class="skill-box">
+
+      <h3>Libraries & Frameworks</h3>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>ReactJS</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="90%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Next.js</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="80%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Material UI</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="80%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Tailwind / Bootstrap</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="85%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Shadcn UI</span>
+          <span>Beginner</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="70%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Three.js</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="80%"></span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         BACKEND & APIs
+    ========================== -->
+
+    <div class="skill-box">
+
+      <h3>Backend & APIs</h3>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Node.js / Express</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="90%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>RESTful APIs</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="90%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>JWT Authentication</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="85%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>API Integration</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="80%"></span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         DATABASES
+    ========================== -->
+
+    <div class="skill-box">
+
+      <h3>Databases</h3>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>SQL</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="80%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>MongoDB</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="85%"></span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         DEVELOPER TOOLS
+    ========================== -->
+
+    <div class="skill-box">
+
+      <h3>Developer Tools</h3>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Git / GitHub</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="90%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Docker</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="80%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Cloudinary</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="75%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>VS Code</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="95%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>PyCharm / IntelliJ</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="85%"></span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         CORE COMPETENCIES
+    ========================== -->
+
+    <div class="skill-box">
+
+      <h3>Core Competencies</h3>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Data Structures & Algorithms</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="85%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Full Stack Web Development</span>
+          <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="90%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>MVC Architecture</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="80%"></span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="skill-info">
+          <span>Performance Optimization</span>
+          <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+          <span data-width="75%"></span>
+        </div>
+      </div>
+
+    </div>
+
   </div>
+
+</section>
+
+
+  <!-- =====================================================
+       SERVICES
+  ====================================================== -->
+
+ <!-- =========================
+     SERVICES SECTION
+========================= -->
+
+<section class="services" id="services">
+
+  <span class="services-subtitle">
+    WHAT I DO
+  </span>
+
+  <h2 class="heading">
+    My <span>Services</span>
+  </h2>
+
+  <p class="services-intro">
+    I build modern, scalable and user-focused digital solutions
+    using the right technologies for each project.
+  </p>
+
+
+  <div class="services-container">
+
+
+    <!-- Web Development -->
+
+    <div class="services-box">
+
+      <div class="service-icon">
+        <i class="bx bx-code-alt"></i>
+      </div>
+
+      <span class="service-number">
+        01
+      </span>
+
+      <h3>
+       Frontend & Web Development
+      </h3>
+
+      <p>
+        I build responsive and modern websites and web applications
+        using HTML, CSS, JavaScript, React and modern frontend tools.
+      </p>
+
+      <div class="service-tags">
+        <span>React</span>
+        <span>JavaScript</span>
+        <span>Responsive UI</span>
+      </div>
+
+      <a href="#projects" class="service-link">
+        Explore Projects
+        <i class="bx bx-right-arrow-alt"></i>
+      </a>
+
+    </div>
+
+
+    <!-- C++ Development -->
+
+    <div class="services-box">
+
+      <div class="service-icon cpp-icon">
+        <img
+          src="images/cplusplus.svg"
+          alt="C++"
+          class="custom-icon"
+        />
+      </div>
+
+      <span class="service-number">
+        02
+      </span>
+
+      <h3>
+        C++ Development
+      </h3>
+
+      <p>
+        I use C++ to solve algorithmic problems and build efficient
+        solutions with strong object-oriented programming and
+        data structure fundamentals.
+      </p>
+
+      <div class="service-tags">
+        <span>C++</span>
+        <span>OOP</span>
+        <span>DSA</span>
+      </div>
+
+      <a href="#skills" class="service-link">
+        View Skills
+        <i class="bx bx-right-arrow-alt"></i>
+      </a>
+
+    </div>
+
+
+    <!-- Python Development -->
+
+<!-- Backend & API Development -->
+
+<div class="services-box">
+
+  <div class="service-icon">
+    <i class="bx bx-server"></i>
+  </div>
+
+  <span class="service-number">
+    03
+  </span>
+
+  <h3>
+    Backend & API Development
+  </h3>
+
+  <p>
+    I build scalable backend systems and RESTful APIs using
+    Node.js and Express.js, with secure authentication,
+    role-based access control and efficient database integration.
+  </p>
+
+  <div class="service-tags">
+    <span>Node.js</span>
+    <span>Express.js</span>
+    <span>REST APIs</span>
+  </div>
+
+  <a href="#projects" class="service-link">
+    Explore Projects
+    <i class="bx bx-right-arrow-alt"></i>
+  </a>
+
 </div>
 
-    
 
-        <div class="project-box">
-          <img src="images/note-removebg-preview.png" alt="" />
-          <div class="project-layer">
-            <h4>Notes App</h4>
-            <p>
-              A Notes App using React.
-            </p>
-            <a href="https://ajitnotes.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
-          </div>
+  </div>
+
+</section>
+
+  <!-- =====================================================
+       PROJECTS
+  ====================================================== -->
+
+<!-- Projects Section -->
+
+<section class="projects" id="projects">
+
+  <div class="projects-header">
+    <p class="section-eyebrow">MY WORK</p>
+
+    <h2 class="heading">
+      Featured <span>Projects</span>
+    </h2>
+
+    <p class="projects-subtitle">
+      A selection of projects I've built using modern technologies,
+      focusing on real-world problems, clean architecture and
+      user-friendly experiences.
+    </p>
+  </div>
+
+
+  <div class="project-container">
+
+
+    <!-- =========================
+         PROJECT 01 - EXCELIQ
+    ========================== -->
+
+    <article class="project-box">
+
+      <div class="project-image">
+
+        <img
+          src="images/favicon2.svg"
+          alt="ExcelIQ project"
+        />
+
+        <div class="project-number">
+          01
         </div>
 
-      
-
-        <div class="project-box">
-          <img src="images/comp7.jpeg" alt="" />
-          <div class="project-layer">
-            <h4>Pending..</h4>
-            <p>
-              Under Development
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-
-        </div>
       </div>
-    </section>
 
-    <!-- contact -->
 
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
+      <div class="project-content">
 
-      <form action="mailto:ajeetsinghghaghrpur@gmail.com" method="post" enctype="text/plain">
-        <div class="input-box">
-          <input type="text" name = "name" placeholder="Full Name" />
-          <input type="email" name = "email" placeholder="Email Address" />
+        <div class="project-category">
+          FULL STACK APPLICATION
         </div>
-        <div class="input-box">
-          <input type="number" name = "phone" placeholder="Mobile Number" />
-          <input type="text" name = "Subject" placeholder="Email Subject" />
+
+        <h3>ExcelIQ</h3>
+
+<p>
+  A full-stack Excel and CSV analytics platform for uploading,
+  processing and analyzing datasets through an intuitive
+  web interface. Built with a focus on scalable backend
+  APIs and a smooth data-driven user experience.
+</p>
+
+
+        <div class="project-tech">
+
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>Cloudinary</span>
+
         </div>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+
+
+<div class="project-links">
+
+  <a
+    href="https://exceliq.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-link"
+  >
+    Live Demo
+    <i class="bx bx-right-arrow-alt"></i>
+  </a>
+
+  <a
+    href="https://github.com/KshatriyaAjit/excel-analyzer-frontend"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-link github-link"
+  >
+    GitHub
+    <i class="bx bxl-github"></i>
+  </a>
+
+</div>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- =========================
+         PROJECT 02 - BYTEBLOG
+    ========================== -->
+
+    <article class="project-box">
+
+      <div class="project-image">
+
+        <img
+          src="images/Blog.jpg"
+          alt="ByteBlog project"
+        />
+
+        <div class="project-number">
+          02
+        </div>
+
+      </div>
+
+
+      <div class="project-content">
+
+        <div class="project-category">
+          MERN STACK APPLICATION
+        </div>
+
+        <h3>ByteBlog</h3>
+
+<p>
+  A full-stack blogging platform with secure authentication,
+  role-based access control, blog management and an admin
+  dashboard for managing content through a structured
+  backend API.
+</p>
+
+
+        <div class="project-tech">
+
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>JWT</span>
+
+        </div>
+
+
+<div class="project-links">
+
+  <a
+    href="https://mybyteblog.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-link"
+  >
+    Live Demo
+    <i class="bx bx-right-arrow-alt"></i>
+  </a>
+
+  <a
+    href="https://github.com/KshatriyaAjit/mern-blog"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-link github-link"
+  >
+    GitHub
+    <i class="bx bxl-github"></i>
+  </a>
+
+</div>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- =========================
+         PROJECT 03 - NOTES APP
+    ========================== -->
+
+    <article class="project-box">
+
+      <div class="project-image">
+
+        <img
+          src="images/note-removebg-preview.png"
+          alt="Notes application"
+        />
+
+        <div class="project-number">
+          03
+        </div>
+
+      </div>
+
+
+      <div class="project-content">
+
+        <div class="project-category">
+          FRONTEND APPLICATION
+        </div>
+
+        <h3>Notes App</h3>
+
+<p>
+  A clean and responsive note-taking application built
+  with React, focused on simple note creation, management
+  and organization with an intuitive user experience.
+</p>
+
+
+        <div class="project-tech">
+
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>CSS</span>
+          <span>Responsive UI</span>
+
+        </div>
+
+
+<div class="project-links">
+
+  <a
+    href="https://ajitnotes.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-link"
+  >
+    Live Demo
+    <i class="bx bx-right-arrow-alt"></i>
+  </a>
+
+  <a
+    href="YOUR_NOTES_GITHUB_URL"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-link github-link"
+  >
+    GitHub
+    <i class="bx bxl-github"></i>
+  </a>
+
+</div>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+
+  <!-- Projects CTA -->
+
+  <div class="projects-footer">
+
+    <p>
+      More projects and experiments are available on my GitHub.
+    </p>
+
+    <a
+      href="https://github.com/KshatriyaAjit"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="projects-github-btn"
+    >
+      <i class="bx bxl-github"></i>
+      View GitHub
+      <i class="bx bx-right-arrow-alt"></i>
+    </a>
+
+  </div>
+
+</section>
+
+  <!-- =====================================================
+       CONTACT
+  ====================================================== -->
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section class="contact" id="contact">
+
+  <div class="contact-header">
+
+    <p class="section-eyebrow">
+      GET IN TOUCH
+    </p>
+
+    <h2 class="heading">
+      Let's <span>Work Together</span>
+    </h2>
+
+    <p class="contact-subtitle">
+      Have a project, opportunity, or just want to connect?
+      I'd love to hear from you. Send me a message and
+      I'll get back to you as soon as possible.
+    </p>
+
+  </div>
+
+
+  <div class="contact-container">
+
+
+    <!-- =========================
+         CONTACT INFORMATION
+    ========================== -->
+
+    <div class="contact-info">
+
+      <div class="contact-info-header">
+
+        <span class="contact-small-title">
+          CONTACT ME
+        </span>
+
+        <h3>
+          Let's build something
+          <span>great.</span>
+        </h3>
+
+        <p>
+          I'm always open to discussing new projects,
+          development opportunities, collaborations,
+          and interesting ideas.
+        </p>
+
+      </div>
+
+
+      <!-- Email -->
+
+      <a
+        href="mailto:ajeetsinghghaghrpur@gmail.com"
+        class="contact-card"
+      >
+
+        <div class="contact-icon">
+          <i class="bx bx-envelope"></i>
+        </div>
+
+        <div class="contact-card-content">
+
+          <span>Email</span>
+
+          <strong>
+            ajeetsinghghaghrpur@gmail.com
+          </strong>
+
+        </div>
+
+        <i class="bx bx-right-arrow-alt contact-arrow"></i>
+
+      </a>
+
+
+      <!-- Availability -->
+
+      <div class="contact-card">
+
+        <div class="contact-icon availability-icon">
+          <i class="bx bx-check-circle"></i>
+        </div>
+
+        <div class="contact-card-content">
+
+          <span>Availability</span>
+
+          <strong>
+            Open to opportunities
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- Location -->
+
+      <div class="contact-card">
+
+        <div class="contact-icon">
+          <i class="bx bx-map"></i>
+        </div>
+
+        <div class="contact-card-content">
+
+          <span>Location</span>
+
+          <strong>
+            India
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- Social Links -->
+
+      <div class="contact-socials">
+
+        <a
+          href="https://github.com/KshatriyaAjit"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ajit-singh-181b8b261/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="bx bxl-linkedin"></i>
+        </a>
+
+        <a
+          href="https://x.com/KshatriyaAjits1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X"
+        >
+          <i class="bx bxl-twitter"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/kshatriya_ajit_singh/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         CONTACT FORM
+    ========================== -->
+
+    <div class="contact-form-container">
+
+      <div class="form-header">
+
+        <span>
+          SEND A MESSAGE
+        </span>
+
+        <h3>
+          Tell me about your idea
+        </h3>
+
+      </div>
+
+
+      <form
+        action="mailto:ajeetsinghghaghrpur@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+
+        <div class="contact-input-row">
+
+          <div class="contact-input">
+
+            <label for="name">
+              Your Name
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+
+          </div>
+
+
+          <div class="contact-input">
+
+            <label for="email">
+              Email Address
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-input">
+
+          <label for="subject">
+            Subject
+          </label>
+
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="What would you like to discuss?"
+            required
+          />
+
+        </div>
+
+
+        <div class="contact-input">
+
+          <label for="message">
+            Message
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me a little about your project or opportunity..."
+            rows="6"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="contact-submit"
+        >
+
+          Send Message
+
+          <i class="bx bx-paper-plane"></i>
+
+        </button>
+
       </form>
-    </section>
 
-    <!-- footer -->
+    </div>
 
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2025 by Ajit Singh | All Rights Reserved |</p>
+  </div>
+
+</section>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+ <!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <a href="#home" class="footer-logo">
+        Ajit<span>.</span>
+      </a>
+
+      <p>
+        Full Stack Web Developer building scalable,
+        responsive and user-focused digital experiences.
+      </p>
+    </div>
+
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+
+      <h3>Quick Links</h3>
+
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <!-- Social Links -->
+    <div class="footer-social">
+
+      <h3>Connect With Me</h3>
+
+      <div class="footer-social-links">
+
+        <a
+          href="https://github.com/KshatriyaAjit"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ajit-singh-181b8b261/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="bx bxl-linkedin"></i>
+        </a>
+
+        <a
+          href="https://x.com/KshatriyaAjits1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X"
+        >
+          <i class="bx bxl-twitter"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/kshatriya_ajit_singh/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+
       </div>
 
-      <div class="footer-iconTap">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
-    </footer>
+    </div>
 
-    <!-- Scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  </div>
 
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 Ajit Singh. All Rights Reserved.
+    </p>
+
+    <a href="#home" class="footer-top" aria-label="Back to top">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+
+  </div>
+
+</footer>
+
+
+  <!-- =====================================================
+       EXTERNAL JAVASCRIPT LIBRARIES
+  ====================================================== -->
+
+  <!-- ScrollReveal -->
+
+  <script
+    src="https://unpkg.com/scrollreveal"
+  ></script>
+
+
+  <!-- Typed.js -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"
+  ></script>
+
+
+  <!-- Custom JavaScript -->
+
+  <script
+    src="js/script.js"
+  ></script>
+
+
+</body>
+
 </html>
