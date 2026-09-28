@@ -191,22 +191,21 @@ handleScroll();
    SCROLL REVEAL
 ========================================================= */
 
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
 if (typeof ScrollReveal !== "undefined") {
-
   const sr = ScrollReveal({
-
     distance: "80px",
-
     duration: 1200,
-
     delay: 100,
-
     reset: false
-
   });
 
-
-  /* Hero */
+  /* =======================================================
+     HERO
+  ======================================================= */
 
   sr.reveal(
     ".home-content",
@@ -214,7 +213,6 @@ if (typeof ScrollReveal !== "undefined") {
       origin: "left"
     }
   );
-
 
   sr.reveal(
     ".home-img",
@@ -224,7 +222,9 @@ if (typeof ScrollReveal !== "undefined") {
   );
 
 
-  /* Section headings */
+  /* =======================================================
+     SECTION HEADINGS
+  ======================================================= */
 
   sr.reveal(
     ".heading",
@@ -234,7 +234,9 @@ if (typeof ScrollReveal !== "undefined") {
   );
 
 
-  /* About */
+  /* =======================================================
+     ABOUT
+  ======================================================= */
 
   sr.reveal(
     ".about-img",
@@ -243,7 +245,6 @@ if (typeof ScrollReveal !== "undefined") {
     }
   );
 
-
   sr.reveal(
     ".about-content",
     {
@@ -251,8 +252,60 @@ if (typeof ScrollReveal !== "undefined") {
     }
   );
 
+  sr.reveal(
+    ".about-highlight",
+    {
+      origin: "bottom",
+      interval: 100,
+      distance: "30px"
+    }
+  );
 
-  /* Skills */
+
+  /* =======================================================
+     EXPERIENCE
+  ======================================================= */
+
+  sr.reveal(
+    ".experience-header",
+    {
+      origin: "top"
+    }
+  );
+
+  sr.reveal(
+    ".experience-card",
+    {
+      origin: "bottom",
+      distance: "50px"
+    }
+  );
+
+
+  /* =======================================================
+     EDUCATION & ACHIEVEMENTS
+  ======================================================= */
+
+  sr.reveal(
+    ".education-header",
+    {
+      origin: "top"
+    }
+  );
+
+  sr.reveal(
+    ".education-card, .achievement-card",
+    {
+      origin: "bottom",
+      interval: 120,
+      distance: "40px"
+    }
+  );
+
+
+  /* =======================================================
+     SKILLS
+  ======================================================= */
 
   sr.reveal(
     ".skill-box",
@@ -264,7 +317,17 @@ if (typeof ScrollReveal !== "undefined") {
   );
 
 
-  /* Services */
+  /* =======================================================
+     SERVICES
+  ======================================================= */
+
+  sr.reveal(
+    ".services-subtitle, .services-intro",
+    {
+      origin: "top",
+      distance: "30px"
+    }
+  );
 
   sr.reveal(
     ".services-box",
@@ -276,7 +339,17 @@ if (typeof ScrollReveal !== "undefined") {
   );
 
 
-  /* Projects */
+  /* =======================================================
+     PROJECTS
+  ======================================================= */
+
+  sr.reveal(
+    ".projects-header",
+    {
+      origin: "top",
+      distance: "40px"
+    }
+  );
 
   sr.reveal(
     ".project-box",
@@ -287,18 +360,43 @@ if (typeof ScrollReveal !== "undefined") {
     }
   );
 
-
-  /* Contact */
-
   sr.reveal(
-    ".contact form",
+    ".projects-footer",
     {
-      origin: "bottom"
+      origin: "bottom",
+      distance: "30px"
     }
   );
 
-}
 
+  /* =======================================================
+     CONTACT
+  ======================================================= */
+
+  sr.reveal(
+    ".contact-header",
+    {
+      origin: "top",
+      distance: "40px"
+    }
+  );
+
+  sr.reveal(
+    ".contact-info",
+    {
+      origin: "left",
+      distance: "50px"
+    }
+  );
+
+  sr.reveal(
+    ".contact-form-container",
+    {
+      origin: "right",
+      distance: "50px"
+    }
+  );
+}
 
 /* =========================================================
    TYPED.JS
